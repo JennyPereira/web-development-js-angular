@@ -70,3 +70,20 @@ const books = [
         "year": 1350
     },
 ]
+
+const showList = () => {
+    const container = document.querySelector(".section-books");
+
+    for (const book of books) {
+        const box = document.createElement('div');
+        box.setAttribute('class', 'book');
+        const book_1 = document.createElement('p');
+        book_1.innerHTML = books[0].title;
+
+        container.appendChild(book_1);
+    }
+
+
+}
+
+showList();
