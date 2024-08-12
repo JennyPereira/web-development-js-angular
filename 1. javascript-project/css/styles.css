@@ -1,0 +1,13 @@
+.section-books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+    grid-template-rows: 550px;
+    gap: 45px;
+    justify-content: center;
+}
+
+.bookimg {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
