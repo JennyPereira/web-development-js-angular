@@ -79,7 +79,7 @@ const showList = () => {
         const box = document.createElement('div');
         box.setAttribute('class', 'book');
         const bookImage = document.createElement('img');
-        bookImage.setAttribute('class', 'bookImg');
+        bookImage.setAttribute('class', 'bookimg');
         bookImage.src = book.imageLink;
         box.appendChild(bookImage);
 
