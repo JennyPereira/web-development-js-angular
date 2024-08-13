@@ -1,3 +1,16 @@
+const button = document.querySelector('.showmore');
+button.addEventListener('click', () => { console.log('click') });
+
+function moreInfo() {
+    const showInfo = document.querySelector('.showmore');
+
+    const webInfo = document.createElement('p');
+    webInfo.innerHTML = 'Lorem ipsu';
+
+    showInfo.parentNode.insertBefore(webInfo, showInfo.nextSibling);
+}
+
+
 const books = [
     {
         "author": "Chinua Achebe",

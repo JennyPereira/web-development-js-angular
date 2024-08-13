@@ -11,3 +11,7 @@
     height: 400px;
     object-fit: cover;
 }
+
+button {
+    cursor: pointer;
+}
