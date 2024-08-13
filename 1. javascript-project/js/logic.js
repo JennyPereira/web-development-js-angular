@@ -1,6 +1,8 @@
 const button = document.querySelector('.showmore');
 button.addEventListener('click', () => { moreInfo() });
 
+const urlBooks = 'http://localhost:3000/books';
+
 function moreInfo() {
     const showInfo = document.querySelector('.showmore');
 
@@ -11,7 +13,7 @@ function moreInfo() {
 }
 
 
-const books = [
+const booksArray = [
     {
         "author": "Chinua Achebe",
         "country": "Nigeria",
@@ -84,11 +86,24 @@ const books = [
     },
 ]
 
-const showList = () => {
+/**FETCH */
+async function getBooks() {
+    const books = await fetch(urlBooks)
+        .then(response => response.json())
+        .catch(e => {
+            console.log(e);
+        });
+
+    return books;
+}
+
+const showList = async () => {
     const container = document.querySelector(".section-books");
     const fragment = document.createDocumentFragment();
 
-    for (const book of books) {
+    const bookFetch = await getBooks();
+
+    for (const book of bookFetch) {
         const box = document.createElement('div');
         box.setAttribute('class', 'book');
         const bookImage = document.createElement('img');
