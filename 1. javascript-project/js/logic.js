@@ -1,5 +1,5 @@
 const button = document.querySelector('.showmore');
-button.addEventListener('click', () => { console.log('click') });
+button.addEventListener('click', () => { moreInfo() });
 
 function moreInfo() {
     const showInfo = document.querySelector('.showmore');
