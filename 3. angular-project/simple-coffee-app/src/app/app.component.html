@@ -1,0 +1,11 @@
+<h1>New component</h1>
+<p>{{parrafo}}</p>
+<!--<input type="text" [(ngModel)]="parrafo">-->
+<button type="submit" (click)="changeValue()" [disabled]="buttonState">Click me</button>
+<!--<div class="box">
+  <p *ngIf="'Nuevo texto' == parrafo">Texto del parrafo</p>
+</div>-->
+
+<div class="box">
+  <p [ngStyle]="{'background-color': parrafo == 'Nuevo texto' ? 'green' : 'blue'}">Texto del parrafo</p>
+</div>

@@ -1,0 +1,32 @@
+:root {
+    --color-background: #111315;
+    --color-background-products: #1B1D1F;
+    --color-dark-gray: #6F757C;
+    --color-prices: #BEE3CC;
+    --color-text: #FEF7EE;
+    --color-tag: #F6C768;
+    --color-danger: #ED735D;
+}
+
+@font-face {
+    font-family: 'DMSans-Light';
+    src: url(../public/assets/fonts/DMSans-Light.ttf);
+}
+
+@font-face {
+    font-family: 'DMSans-Regular';
+    src: url(../public/assets/fonts/DMSans-Regular.ttf);
+}
+
+* {
+    font-family: 'DMSans-Regular';
+    font-size: 16px;
+    color: var(--color-dark-gray);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: var(--color-background);
+}
