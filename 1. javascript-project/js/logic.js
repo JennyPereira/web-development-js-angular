@@ -97,13 +97,22 @@ async function getBooks() {
     return books;
 }
 
+async function getBooksAxios() {
+    const books = await axios(urlBooks);
+
+    console.log(books);
+
+    return books.data;
+}
+
 const showList = async () => {
     const container = document.querySelector(".section-books");
     const fragment = document.createDocumentFragment();
 
-    const bookFetch = await getBooks();
+    /*const bookFetch = await getBooks();*/
+    const bookAxios = await getBooksAxios();
 
-    for (const book of bookFetch) {
+    for (const book of bookAxios) {
         const box = document.createElement('div');
         box.setAttribute('class', 'book');
         const bookImage = document.createElement('img');
