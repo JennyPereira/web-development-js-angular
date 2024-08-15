@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { CoffeeProduct } from '../models/coffee-product';
 
 @Injectable({
   providedIn: 'root'
@@ -9,8 +11,7 @@ export class CoffeeService {
 
   constructor(private http: HttpClient) { }
 
-  getAllCoffeeProducts() {
-    const coffeeProducts = this.http.get<any>(this.url);
-    console.log(coffeeProducts);
+  getAllCoffeeProducts(): Observable<CoffeeProduct[]> {
+    return this.http.get<any>(this.url);
   }
 }
