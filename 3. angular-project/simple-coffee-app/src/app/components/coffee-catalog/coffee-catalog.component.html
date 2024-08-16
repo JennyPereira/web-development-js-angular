@@ -6,6 +6,6 @@
             inventore blanditiis?</p>
     </div>
     <div *ngFor="let coffeeProduct of coffeeProductList">
-        <app-coffee-product></app-coffee-product>
+        <app-coffee-product [coffeeProduct]="coffeeProduct"></app-coffee-product>
     </div>
 </section>

@@ -9,5 +9,5 @@ import { CoffeeProduct } from '../../models/coffee-product';
   styleUrl: './coffee-product.component.css'
 })
 export class CoffeeProductComponent {
-  @Input() coffeProduct!: CoffeeProduct;
+  @Input() coffeeProduct!: CoffeeProduct;
 }

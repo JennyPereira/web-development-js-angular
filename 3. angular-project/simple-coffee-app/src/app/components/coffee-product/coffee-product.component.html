@@ -1,1 +1,13 @@
-<p>coffee-product works!</p>
+<div class="coffee-image">
+    <img [src]="coffeeProduct.image">
+    <p class="coffee-image__info-right">Popular</p>
+</div>
+<div class="coffee-description">
+    <p>{{coffeeProduct.name}}</p>
+    <p class="coffee-description--price">{{coffeeProduct.price}}</p>
+</div>
+<div class="rating-section">
+    <img src="assets/images/Star_fill.svg">
+    <p>{{coffeeProduct.rating}} <span class="votes">({{coffeeProduct.votes}} votes)</span> </p>
+    <p class="state">Sold out</p>
+</div>
