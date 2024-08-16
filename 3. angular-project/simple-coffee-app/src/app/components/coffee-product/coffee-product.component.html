@@ -1,6 +1,6 @@
 <div class="coffee-image">
     <img [src]="coffeeProduct.image">
-    <p class="coffee-image__info-right">Popular</p>
+    <p class="coffee-image__info-right" *ngIf="coffeeProduct.popular == true">Popular</p>
 </div>
 <div class="coffee-description">
     <p>{{coffeeProduct.name}}</p>
@@ -9,5 +9,5 @@
 <div class="rating-section">
     <img src="assets/images/Star_fill.svg">
     <p>{{coffeeProduct.rating}} <span class="votes">({{coffeeProduct.votes}} votes)</span> </p>
-    <p class="state">Sold out</p>
+    <p class="state" *ngIf="coffeeProduct.available == false">Sold out</p>
 </div>
