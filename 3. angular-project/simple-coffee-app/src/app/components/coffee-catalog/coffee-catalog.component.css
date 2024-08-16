@@ -1,0 +1,57 @@
+.coffee-catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+}
+
+.coffee-catalog__heading {
+    padding: 0 240px;
+    text-align: center;
+}
+
+.coffee-catalog__heading h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-text);
+}
+
+
+.coffee-catalog__heading__edit {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.coffee-catalog__heading__edit button {
+    cursor: pointer;
+}
+
+
+.coffee-catalog__options__options {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.coffee-catalog__options__options button {
+    font-size: 0.875rem;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: var(--color-dark-gray);
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 540px) and (max-width: 1159px) {
+    .foreground {
+        padding: 80px 40px;
+    }
+
+    .coffee-catalog__heading {
+        padding: 0 90px;
+    }
+}
