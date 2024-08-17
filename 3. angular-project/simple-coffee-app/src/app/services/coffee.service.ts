@@ -21,6 +21,10 @@ export class CoffeeService {
     return this.http.get<any>(this.url).pipe(catchError(this.handleError));
   }
 
+  saveNewProduct(newProduct: CoffeeProduct): Observable<CoffeeProduct> {
+    return this.http.post<CoffeeProduct>(this.url, newProduct, this.httpOptions).pipe(catchError(this.handleError));
+  }
+
   handleError(error: HttpErrorResponse): Observable<never> {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {

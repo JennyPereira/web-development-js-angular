@@ -1,26 +1,26 @@
 <div class="container_coffee_Form">
-    <form action="">
+    <form [formGroup]="applyForm" (submit)="submitApplication()">
         <label for="product-name">Name</label>
-        <input id="product-name" type="text" required>
+        <input id="product-name" formControlName="name" type="text" required>
 
         <label for="product-image">Image</label>
-        <input id="product-image" type="text" required>
+        <input id="product-image" formControlName="image" type="text" required>
 
         <label for="product-price">Price</label>
-        <input id="product-price" type="text" required>
+        <input id="product-price" formControlName="price" type="text" required>
 
         <div class="container_coffee_Form--checkbox">
-            <input id="product-popular" type="checkbox" checked="checked">
+            <input id="product-popular" type="checkbox" formControlName="popular" checked="checked">
             <label for="product-popular">Popular</label>
             <!--<span>{{popularValue}}</span>-->
         </div>
 
         <div class="container_coffee_Form--checkbox">
-            <input id="product-available" type="checkbox" checked="checked">
+            <input id="product-available" type="checkbox" formControlName="available" checked="checked">
             <label for="product-available">available</label>
             <!--<span>{{availableValue}}</span>-->
         </div>
 
-        <button type="submit">Save</button>
+        <button type="submit" [disabled]="applyForm.invalid">Save</button>
     </form>
 </div>

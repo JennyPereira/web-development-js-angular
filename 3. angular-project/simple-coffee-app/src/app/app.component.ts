@@ -8,7 +8,7 @@ import { CoffeeProductFormComponent } from './components/coffee-product-form/cof
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CoffeeCatalogComponent],
+  imports: [CoffeeCatalogComponent, CoffeeProductFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
