@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { CoffeeCatalogComponent } from './components/coffee-catalog/coffee-catalog.component';
+import { CoffeeProductFormComponent } from './components/coffee-product-form/coffee-product-form.component';
 
 @Component({
   selector: 'app-root',
