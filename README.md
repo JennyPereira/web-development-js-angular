@@ -10,7 +10,7 @@ Conocimientos sobre:
 - HTML, CSS
 
 Tener instalado:
-- Github
+- Git
 - Node
 - IDE - Visual Studio
 

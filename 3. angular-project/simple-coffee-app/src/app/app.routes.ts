@@ -15,7 +15,7 @@ export const routes: Routes = [
         title: 'Nuevo Producto'
     },
     {
-        path: 'detail',
+        path: 'detail/:id',
         component: CoffeeProductDetailComponent,
         title: 'Detalle del producto'
     }

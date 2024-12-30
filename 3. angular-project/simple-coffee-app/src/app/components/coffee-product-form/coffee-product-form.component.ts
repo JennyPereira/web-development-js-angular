@@ -14,7 +14,7 @@ export class CoffeeProductFormComponent implements OnInit {
   applyForm = new FormGroup({
     name: new FormControl('', Validators.required),
     image: new FormControl('', Validators.required),
-    price: new FormControl('', Validators.required),
+    price: new FormControl('', [Validators.required, Validators.pattern('^[0-9]*$')]),
     rating: new FormControl(0),
     votes: new FormControl(0),
     popular: new FormControl(false),

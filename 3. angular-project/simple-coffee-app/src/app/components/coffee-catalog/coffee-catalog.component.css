@@ -29,14 +29,14 @@
 }
 
 
-.coffee-catalog__options__options {
+.coffee-catalog__options {
     width: 100%;
     display: flex;
     gap: 15px;
     justify-content: center;
 }
 
-.coffee-catalog__options__options button {
+.coffee-catalog__options button {
     font-size: 0.875rem;
     border: none;
     padding: 8px 15px;

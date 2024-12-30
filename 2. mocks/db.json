@@ -31,16 +31,6 @@
       "available": true
     },
     {
-      "id": "4",
-      "name": "Coffee Latte",
-      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/coffee-latte.jpg",
-      "price": "$4.50",
-      "rating": 5,
-      "votes": 23,
-      "popular": false,
-      "available": true
-    },
-    {
       "id": "557d",
       "name": "Chocolate Coffee",
       "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/chocolate-coffee.jpg",

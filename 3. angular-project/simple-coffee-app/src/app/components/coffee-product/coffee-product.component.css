@@ -2,6 +2,13 @@
     position: relative;
 }
 
+.coffee-image img {
+    border-radius: 12px;
+    max-width: 260px;
+    min-height: 160px;
+    object-fit: cover;
+}
+
 .coffee-image__info-right {
     position: absolute;
     background-color: var(--color-tag);

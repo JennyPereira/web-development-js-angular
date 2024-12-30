@@ -22,16 +22,20 @@
 nav {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 45px;
     flex-wrap: wrap;
+    padding-bottom: 30px;
+    border-bottom: #6F757C solid 2px;
+    justify-content: flex-end;
 }
 
 nav a {
+    color: var(--color-text);
     text-decoration: none;
 }
 
 nav a:hover {
-    transform: scale(1.03);
+    /*transform: scale(1.03);*/
     transition: 1s;
     text-decoration: underline;
 }

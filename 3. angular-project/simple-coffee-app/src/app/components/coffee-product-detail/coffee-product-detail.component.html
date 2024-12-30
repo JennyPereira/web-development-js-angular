@@ -1,1 +1,6 @@
-<p>coffee-product-detail works!</p>
+@if (coffeeProduct$ | async; as product) {
+<p>Producto: {{product.name}}</p>
+<p>Precio: {{product.price}}</p>
+<p>Votos: {{product.votes}}</p>
+<p>Disponible: {{product.available}}</p>
+}
